@@ -127,4 +127,3 @@ if st.sidebar.button('Predict'):
 #            st.image("https://live.staticflickr.com/65535/51376589362_b92e27ae7a_b.jpg", width=200)
 #         elif user_data['Class'].values == 'Iris-virginica':
 #            st.image("https://wiki.irises.org/pub//Spec/SpecVirginica/ivirginicagiantblue01.jpg", width=200)
-pip freeze > requirements.txt
