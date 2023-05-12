@@ -37,18 +37,10 @@ Dataframe.rename(columns = {0: 'sepal length (cm)',
                        3:  'petal width (cm)',
                        4: 'Class'}, inplace=True )
 st.table(Dataframe.sample(10))
-sepal_length = st.sidebar.slider('sepal length (cm)', Dataframe['sepal length (cm)'].min(),
-                                        Dataframe['sepal length (cm)'].max(),
-                                        Dataframe['sepal length (cm)'].mean())
-sepal_width = st.sidebar.slider('sepal width (cm)', Dataframe['sepal width (cm)'].min(),
-                                        Dataframe['sepal width (cm)'].max(),
-                                        Dataframe['sepal width (cm)'].mean())
-petal_length = st.sidebar.slider('petal length (cm)', Dataframe['petal length (cm)'].min(),
-                                        Dataframe['petal length (cm)'].max(),
-                                        Dataframe['petal length (cm)'].mean())
-petal_width = st.sidebar.slider('petal width (cm)', Dataframe['petal width (cm)'].min(),
-                                        Dataframe['petal width (cm)'].max(),
-                                        Dataframe['petal width (cm)'].mean())
+sepal_length = st.sidebar.slider('sepal length (cm)',4.30,7.90,5.84)
+sepal_width = st.sidebar.slider('sepal width (cm)',2.00,4.40, 3.05)
+petal_length = st.sidebar.slider('petal length (cm)',1.00,6.90,3.76)
+petal_width = st.sidebar.slider('petal width (cm)', 0.10,2.50,1.20)
 
 
 user_input = {'sepal length (cm)': sepal_length,
